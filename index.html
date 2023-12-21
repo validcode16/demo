@@ -1,0 +1,104 @@
+<script>
+//  Otp generate 
+
+let otpgenerator = (digit)=>{
+    let nums = '0123456789';
+    let otp = '';
+
+    for(let i=1; i<=digit; i++){
+        otp +=[(Math.floor(Math.random()*10))]
+    }
+    return otp;
+}
+
+console.log(otpgenerator(6));
+
+// Palindrome Verification In Javascript ( reverse or first word look like same eg naman)
+
+let word = 'nayan';
+let reverse = word.split('').reverse().join('').toString();
+// split() function in JavaScript is useful because it allows you to easily manipulate 
+// and work with strings
+
+if(word == reverse){
+    console.log("Given word is Polidrom word");
+}
+else{
+    console.log("Given word is not Polidrom word")
+}
+
+//  Merge Arra y wiiithouuut duupliicates
+
+console.log("Merge Arra y wiiithouuut duupliicates");
+
+let a = ["mango", "Banana", "Blueberry", "Grape"];
+let b = ["Kive", "Banana", "Mango", "Grape"];
+
+let newarra = Array.from(new Set([...a,...b]))
+
+console.log(newarra);
+
+// Spitting string into array
+console.log("Spitting string into array");
+let fruits = 'mango,grapes,banana,bluberry,pineaaple,orange';
+
+let split = fruits.split(',')
+console.log(split);
+console.log(`4th position index is: ${split[4]}`)
+
+// Spitting string into array
+console.log("Object Iteration with For-In Loop.In Javascript ");
+
+let obj = {
+    name: 'ABC',
+    lanme: 'DEF',
+    city: 'pune'
+}
+
+for(let data in obj){
+    console.log(`${data} : ${obj[data]}`)
+}
+
+console.log("Swapping of Two Numbers ");
+
+let c = 5;
+let d = 10;
+ c = c+d;
+ d = c-d;
+ c = c-d
+console.log(`C = ${c}  D = ${d}`)
+
+console.log("Two Dimensional ");
+
+let ar = [
+[1,2,3,4,5],
+['a','b','c','d'],
+[6,5,7,8,9]
+
+]
+
+console.log(ar[0][2], ar[1][1])
+
+console.log("Convert Object into Array in javascript  ");
+
+let fval = {
+    apple : 40,
+    mango : 140,
+    Cherry : 240
+}
+
+let ary = []
+
+for( array in fval){
+    ary.push(array +':'+ fval[array])
+}
+console.log(ary)
+
+console.log("Spread Operator (Converrt two array into signle array) ");
+
+let a1 = ["mango", "Banana", "Blueberry", "Grape"];
+let b1 = ["orange", "apple", "Mango", "Grape"];
+
+let newArray = [...a1,...b1]
+console.log(newArray)
+</script>
